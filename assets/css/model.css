@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
+
+:root {
+    /* Cores */
+    --primary-color: #0b2e15;
+    --secondary-color: #0f3d1c;
+    --tertiary-color: #134e24;
+    --quaternary-color: #a4c085;
+    --quinary-color: #7f95d1;
+    --senary-color: #eeede4;
+    --background-color: #fefefb;
+    --text-color: #222;
+    --black: #000;
+    --white: #fefefb;
+
+    /* Tipografia */
+    --font-family: "Geist", sans-serif;
+
+    --font-size-base: 16px;
+    --font-size-large: 20px;
+
+    /* Containers */
+    --container-max-width: 1452px;
+    --desktop-container-padding: 24px;
+    --container-large-max-width: 1630px;
+
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--secondary-color);
+    background-color: var(--background-color);
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.df-button {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-transform: capitalize;
+    white-space: nowrap;
+    border-radius: 200px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4em;
+    text-decoration: none;
+    transition: all .4s;
+    display: flex;
+
+    text-align: center;
+    height: 42px;
+}
+
+.df-button span {
+    margin-left: 10px;
+    font-size: 14px;
+    line-height: 1.4em;
+}
+
+.df-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.df-white-button {
+    background-color: var(--tertiary-color);
+}
+
+.df-link-hover {
+    color: var(--white);
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: #00000000;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color .3s ease-in-out;
+}
+
+.df-link-hover:hover {
+    text-decoration-color: var(--white);
+}
+
+.df-section,
+.pd-section {
+    width: 100%;
+    min-width: 320px;
+}
+
+.pd-section {
+    padding: 42px 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--container-max-width);
+    min-width: 320px;
+    padding: var(--desktop-container-padding);
+}
+
+.container-large {
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--container-large-max-width);
+    min-width: 320px;
+    padding: var(--desktop-container-padding);
+}
+
+/* TEXTOS E FONTES 🟢 */
+
+h1 {
+    font-size: 68px;
+    font-weight: 300;
+    line-height: 1.1em;
+    letter-spacing: -.01em;
+    white-space: pre-line;
+
+    margin-bottom: 24px;
+}
+
+h1 span {
+    font-family: "Newsreader", serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 51px;
+    font-weight: 300;
+    line-height: 1.1em;
+    letter-spacing: -.01em;
+}
+
+h2 span {
+    font-family: "Newsreader", serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.2em;
+    letter-spacing: -.01em;
+}
+
+h3 span {
+    font-family: "Newsreader", serif;
+    font-style: italic;
+
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+.par-small {
+    letter-spacing: -.01em;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+p>span {
+    font-family: "Newsreader", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.par-large {
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.3em;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
+.overline {
+    letter-spacing: .6px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/* TEXTOS E FONTES 🟡*/
+
+/* FOOTER DESKTOP 🟢 */
+.footer {
+    background-color: var(--primary-color);
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.footer-link a {
+    color: var(--white);
+}
+
+.footer-contact-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 32px 0;
+
+}
+
+/* .footer-contact-item {} */
+
+.footer-contact-overline {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+.footer-contact-link {
+    color: var(--white);
+    font-size: 24px;
+    line-height: 1.3;
+    cursor: pointer;
+}
+
+.footer-corp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-copyright,
+.footer-privacy {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.footer-tcna {
+    width: 75px;
+}
+
+.footer-tcna img {
+    width: 100%;
+    height: auto;
+}
+/* FOOTER DESKTOP 🟡*/
+
+/* WHATSAPP ICON 🟢 */
+.wpp-icon {
+	width: 68px;
+	height: 68px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+	background-color: var(--tertiary-color);
+	border-radius: 50%;
+	transition: .3s ease-in-out;
+}
+
+.wpp-icon img {
+	width: 30px;
+}
+
+.wpp-icon:hover {
+	scale: 1.06;
+}
+/* WHATSAPP ICON 🟡 */
+
+
+@media screen and (max-width: 991px) {
+    .df-button {
+        padding: 18px 28px;
+        font-size: 16px;
+    }
+
+    .df-link-hover {
+        font-size: 14px;
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1.5px;
+    }
+
+    .container {
+        max-width: 678px;
+    }
+
+    /* FOOTER MOBILE 🟢 */
+    .footer-menu {
+        display: none;
+    }
+
+    .footer-contact-link {
+        font-size: 16px
+    }
+
+    .footer-corp {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    /* FOOTER MOBILE 🟡*/
+}
+
+@media screen and (max-width: 767px) {
+    .df-button {
+        padding: 16px 20px;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+
+}
+
+@media screen and (max-width: 479px) {
+    .df-button {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+
+    /* .container {
+        max-width: none;
+    } */
+}
+
+
+
+
+
+/* @media (min-width: 768px) {}
+
+@media screen and (min-width: 1440px) {} */
